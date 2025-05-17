@@ -1,0 +1,531 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  .header {
+      width: 100vw;
+      height: 100vh;
+      background: url("header.png");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-repeat: no-repeat;
+  }
+  .logo {
+      font-size: 96px;
+      font-weight: bold;
+      color: #FCF0E9;
+      text-transform: uppercase;
+      font-family: Advent Pro;
+  }
+  .subtitle {
+      font-size: 64px;
+      color: #FCF0E9;
+      font-family: Advent Pro;
+      font-weight: bold;
+  }
+  .slogan {
+      font-size: 64px;
+      color: #FCF0E9;
+      font-weight: bold;
+      letter-spacing: 1px;
+      max-width: 80%;
+      font-family: Advent Pro;
+  }
+  h1.a{
+    font-size: 96px;
+    text-align: center;
+    color: #52433A;
+    font-family: Cormorant Infant;
+  }
+  h2.aa{
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #52433A;
+    font-family: Cormorant Infant;
+    margin-bottom:1.5%;
+    margin-left:4% ;
+    margin-right:4%;
+  }
+.aaaa{
+    margin-top:1.5%;
+    font-weight: 501;
+    font-size: 48px;
+    text-align: center;
+    color: #52433A;
+    font-family: Cormorant Infant;
+  }
+  .text{
+    display: flex;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+ .content-block {
+  display: flex;
+  align-items: center;
+}
+.image-half {
+  flex: 1;
+  padding: 20px;
+}
+.image-half img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.248);
+}
+.text-half {
+  flex: 1;
+  padding: 20px;
+}
+.text-half h2 {
+  color: #8b5a2b;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: Advent Pro;
+}
+.text-half p {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #52433A;
+  font-weight: bold;
+  font-family: Advent Pro;
+}
+/* Чередование сторон */
+.image-left .image-half {
+  order: 1;
+}
+.image-left .text-half {
+  order: 2;
+}
+.image-right .image-half {
+  order: 2;
+}
+.image-right .text-half {
+  order: 1;
+}
+.line {
+  width: 100%;
+  height: 1px; 
+  background-color: black; 
+  position: center; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  margin-bottom: 20px;
+}
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+}
+.advantage-item {
+  background-color: #DED6D1;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 250px;
+}
+.advantage-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+.advantage-title {
+  color: #8b5a2b;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0c9a6;
+  padding-bottom: 10px;
+  width: 100%;
+  font-family: Advent Pro;
+}
+.advantage-text {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Advent Pro;
+  font-weight: bold;
+}
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.assortment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 25px;
+}
+.product-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  position: relative;
+  overflow: hidden;
+  background-color: #FFF9F3;
+}
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  object-position: center;
+}
+.category-text {
+  padding: 15px;
+}
+a[href^="#"] {
+  color: #52433A;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a[href^="#"]:hover {
+  color: #1c1713;
+  text-decoration: underline;
+}
+.category-name {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #52433A;
+  text-align: center;
+  font-family: Advent Pro;
+}
+.product-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.product-list li {
+  margin-bottom: 7px;
+  font-size: 24px;
+  color: #52433A;
+  text-align: center;
+  font-family: Advent Pro;
+}
+h1.b{
+  font-size: 48px;
+  font-family: Advent Pro;
+  color: #52433A;
+  font-weight: lighter;
+  padding: 20px;
+}
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 30px;
+}
+.product-card {
+  background-color: #FFF9F3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.product-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #FFF9F3;
+}
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 15px;
+}
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+.product-name {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  color: #52433A;
+  font-family: Advent Pro;
+}
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #52433A;
+  font-family: Advent Pro;
+}
+ .final-section {
+  padding: 40px ;
+  text-align: center;
+  margin: 0 auto;
+}
+.action-btn {
+  background-color: #52433A;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  margin: 0 auto;
+  font-family: Cormorant Infant;
+  font-weight: bold;
+}
+.full-width-footer {
+  background-color: #DED6D1;
+  width: 100%;
+  padding: 30px;
+}
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left {
+  text-align: left;
+  line-height: 0.7;
+}
+.brand-name {
+  font-weight: bold;
+  font-size: 64px;
+  color: #52433A;
+  font-family: Advent Pro;
+}
+.brand-subtitle {
+font-weight: bold;
+  font-size: 54px;
+  color: #52433A;
+  font-family: Advent Pro;
+}
+.opening {
+  font-size: 36px;
+  color: #756357;
+  font-family: Advent Pro;
+
+}
+.footer-right {
+  text-align: right;
+  line-height: 1.4;
+  font-size: 36px;
+  color: #756357;
+  font-family: Cormorant Infant;
+}
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+  color: #999;
+  font-size: 24px;
+}
+/* Стили для модального окна */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #FFF9F3;
+            padding: 40px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .modal-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #52433A;
+            font-family: Cormorant Infant;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #52433A;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #52433A;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #52433A;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            font-family: Cormorant Infant;
+        }
+        .submit-btn:hover {
+            background-color: #40352d;
+        }
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #52433A;
+        }
+
+  @media (max-width: 768px) {
+      .logo {
+          font-size: 36px;
+      }
+      .subtitle {
+          font-size: 24px;
+      }
+      .slogan {
+          font-size: 20px;
+      }
+      .header {
+        height: 50vh;
+      }
+      h1.a{
+        font-size: 32px;
+      }
+      h1.b{
+        font-size: 20px;
+      }
+    .text-half h2 {
+        font-size: 12px;
+    }
+    .text-half p {
+        font-size: 10px;
+    }
+    .advantages-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 15px;
+}
+.product-info {
+  padding: 15px;
+}
+.product-name {
+  font-size: 16px;
+}
+.product-price {
+  font-size: 18px;
+}
+h2.aa{
+  font-size: 20px;
+}
+.aaaa{
+  font-size: 24px;
+}
+.brand-name {
+font-size: 36px;
+}
+.brand-subtitle{
+  font-size: 32px;
+}
+.opening{
+  font-size: 20px;
+}
+.footer-right{
+  font-size: 20px;
+  line-height: 1.7;
+}
+.copyright{
+  font-size: 16px;
+  margin-top: 2%;
+}
+.full-width-footer {
+  padding: 10px;
+}
+.action-btn{
+  font-size: 18px;
+}
+  }
+
+  @media (max-width: 576px) {
+  .advantages-grid {
+      grid-template-columns: repeat(2, minmax(100px,1fr)); /* 1 колонка на мобильных */
+  }
+  .advantage-item {
+      padding: 20px;
+      min-height: auto;
+  }
+  .advantage-image {
+      width: 60px;
+      height: 60px;
+  }
+  .advantage-text {
+    font-size: 12px;
+  }
+  .advantage-title{
+    font-size: 16px;
+  }
+  .assortment-grid {
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+}
+.product-image-container {
+    padding-bottom: 60%;
+}
+.category-name {
+    font-size: 15px;
+}
+.catalog-grid {
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 10px;
+}
+h2.aa{
+  font-size: 16px;
+}
+.product-list li{
+  font-size: 16px;
+}
+  }
+
+  
